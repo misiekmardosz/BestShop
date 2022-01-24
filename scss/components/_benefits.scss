@@ -1,0 +1,121 @@
+@mixin underline{
+  content: "";
+  display: block;
+  width: 327px;
+  height: 4px;
+  border-radius: 41px;
+  margin-top: 50px;
+
+}
+section.benefits {
+  background: #F7F7F7;
+  display: flex;
+  padding:68px 0 106px 0;
+  justify-content: center;
+
+  div.benefits_container{
+    max-width: 1124px;
+    background: #F7F7F7;
+
+    div.benefits_container_container{
+      display: flex;
+      height: 370px;
+      align-items: center;
+      background: white;
+      border:1px solid #E8E9ED;
+      border-radius: 5px;
+      margin-top: 38px;
+
+
+      article.benefits_container_article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 31px;
+        position: relative;
+
+        h4{
+          font-family: "Raleway";
+          font-size: 36px;
+
+        }
+        p{
+          font-family: "Open Sans";
+          font-size: 16px;
+          margin-top: 30px;
+
+
+          }
+        }
+    }
+    div.benefits_container_container.notebook {
+      article:first-child::after {
+        @include underline;
+        background: #FB3B64;
+
+      }
+      article:last-child::after{
+
+      }
+
+    }
+  }    div.benefits_container_container.phone {
+        justify-content: space-between;
+        article{
+          width: 440px;
+
+        }
+
+         article:last-child::after {
+           @include underline;
+           background: #08A6E4;
+         }
+       }
+}
+
+.bottom{
+  background-color: #F7F7F7;
+  display: flex;
+  height: 370px;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 38px;
+  .benefits_container_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 620px;
+    height: 370px;
+    background: white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    opacity: 1;
+    .benefits_container_bottom_article{
+      margin:0 36px;
+      &:first-child::after{
+        @include underline;
+        background: #55DFB4;
+      }
+      h4{
+        font-family: "Raleway";
+        font-size: 36px;
+
+      }
+      p{
+        font-family: "Open Sans";
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    }
+
+    &:last-child{
+      width: 44%;
+      margin-left: 60px;
+      background-color: #55DFB4;
+    }
+  }
+}
+
+
+
+

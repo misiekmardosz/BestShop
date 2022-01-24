@@ -246,14 +246,14 @@ section.benefits{
     margin-top: 30px;
     text-align: left;
     font: normal normal normal 16px/22px Open Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #000000;
     opacity: 1;
 }
 div.benefits_container_container>article{
     text-align: left;
     font: normal normal normal 16px/22px Open Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #000000;
     opacity: 1;
     padding-right: 140px;
@@ -284,8 +284,8 @@ img.macbook{
     background: #FB3B64;
     border-radius: 41px;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
 
 
 }
@@ -371,7 +371,6 @@ p.benefits_container_bottom_paragraph::before{
 }
 .trumpet{
     position: absolute;
-    bottom: 0;
     width: 296px;
     height: 207px;
     bottom: 64px;
@@ -395,18 +394,22 @@ p.benefits_container_bottom_paragraph::before{
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+
 
 
 }
 .prices_container_article{
-    height: 461px;
-    width: 372px;
+    height: 500px;
+    width: 405px;
     background: #FFFFFF;
     box-shadow: 5px 10px 27px #07ACE629;
     border: 1px solid #07ACE6;
     border-radius: 18px;
     opacity: 1;
     margin: 40px;
+    padding: 40px;
     text-align: center;
 }
 /*.prices_container_article:hover{*/
@@ -423,21 +426,23 @@ p.benefits_container_bottom_paragraph::before{
     opacity: 1;
     margin: 40px;
     padding: 40px;
+    box-shadow: none;
 }
 .prices_container_article:last-child{
     height: 461px;
     width: 372px;
     background: #FFFFFF;
-    border: 1px solid #FB3B64;
+    border: 1px solid #55DFB4;
     border-radius: 18px;
     opacity: 1;
     margin: 40px;
     padding: 40px;
+    box-shadow: none;
 }
 .prices_container_article_header{
     font: normal normal bold 21px/1px Raleway;
-    letter-spacing: 0px;
     color: #13253B;
+
 
 }
 .prices_container_article_header_price{
@@ -467,20 +472,36 @@ p.benefits_container_bottom_paragraph::before{
 
 
 }
+button.prices_button{
+    align-items: center;
+    background: #08A6E4;
+    margin: 0;
+    position: absolute;
+    bottom:31px;
 
-
+}
 /*CONTACT*/
-
-.contact_contariner_article{
+.contact{
+    display: flex;
+    justify-content: center;
 }
 .contact_container{
     display: flex;
     justify-content: center;
-    padding: 0 366px;
+    width: 896px;
 }
 
 .contact_contariner_article{
+    font: normal 49px Raleway;
 
+}
+.contact_contariner_article_header{
+    font: normal 49px Raleway;
+
+}
+
+.contact_contariner_article_paragraph{
+    font: 16px Open Sans;
 }
 form{
     width: 50%;
@@ -495,29 +516,15 @@ textarea{
     height: 38px;
     margin-bottom: 20px;
     text-align: left;
-    font-family: Nunito Sans;
+    font-size: 22px;
     color: black;
-    border-radius: 8px;
-    border: 0px solid rgba(209, 209, 209, 1);
+    border: none;
+    font-family: Open Sans;
+    border-bottom: 1px solid rgba(209, 209, 209, 1);
     text-decoration: 3px solid;
-
-
 }
 
-input[type=message],
-textarea{
-    width: 100%;
-    height: 140px;
-    margin-bottom: 20px;
-    padding-left: 12px;
-    text-align: left;
-    font-family: Nunito Sans;
-    color: black;
-    border-radius: 8px;
-    border: 1px solid rgba(209, 209, 209, 1);
 
-
-}
 
 label{
     display: inline-block;
@@ -547,11 +554,12 @@ textarea::placeholder {
     opacity: 1;
 }
 
-
-form.message button{
+button{
+    font-size: 13px;
+    font-family: "Open Sans";
     text-align: right;
     margin-top: 20px;
-    padding: 10px 52px;
+    padding: 20px 97px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 3px 6px rgba(255, 0, 0, 0.3);
     border: 1px solid rgba(255, 0, 0, 1);
@@ -561,6 +569,8 @@ form.message button{
     justify-content: flex-end;
     align-items: flex-end;
     margin-left: auto;
+
+    
 
 }
 form.message button:active{
