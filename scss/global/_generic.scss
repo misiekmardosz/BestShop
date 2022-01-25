@@ -1,5 +1,15 @@
+@mixin notebook {
+  @media (max-width: 1352px) {
+    @content;
+  }
+}
+
 .container{
   margin: 0 auto;
   width: 100%;
   max-width: 1352px;
+  @include notebook {
+    width: 100%;
+    padding: 0 15px;
+  }
 }

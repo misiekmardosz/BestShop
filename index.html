@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -61,32 +61,32 @@
     </section>
     <section class="benefits">
         <div class="benefits_container">
-            <div class="benefits_container_container">
+            <div class="benefits_container_container notebook">
                 <article class="benefits_container_article">
                     <h4 class="benefits_container_article_header">Be always first</h4>
                     <p class="benefits_container_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </article>
-                <article class="macbook">
-                    <img src="assets/Macbook.png">
-                </article>
+                <div class="benefits_container_article_notebook_img">
+                    <img src="assets/Macbook.png" class="macbook">
+                </div>
 
             </div>
-            <div class="benefits_container_container">
-                <article class="benefits_container_article"><img src="assets/iPhone.png" class="phone"></article>
+            <div class="benefits_container_container phone">
+                <article class="benefits_container_article phone_img"><img src="assets/iPhone.png" class="phone"></article>
                 <article class="benefits_container_article">
-                    <h4 class="benefits_container_article_header">Your shop is where you are!</h4>
+                    <h4 class="benefits_container_article_header">Your shop <br>is where you are!</h4>
                     <p class="benefits_container_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </article>
 
             </div>
-            <div class="benefits_container_container">
+            <div class= "bottom">
                 <div class="benefits_container_bottom">
-                    <article class="benefits_container_article">
+                    <article class="benefits_container_bottom_article">
                         <h4 class="benefits_container_article_header">Increase recognition your brand!</h4>
-                        <p class="benefits_container_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p class="benefits_container_bottom_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </article>
                 </div>
-                <div class="benefits_container_bottom">
+                <div class="benefits_container_bottom trumpet">
                     <img src="assets/Trumpet.png" class="trumpet">
                 </div>
 
@@ -97,26 +97,72 @@
     </section>
     <section class="prices">
         <h3 class="prices_header">Pricing</h3>
-        <div class="prices_container">
-            <article class="prices_container_article"></article>
-            <article class="prices_container_article"></article>
-            <article class="prices_container_article"></article>
+        <div class="prices_container container">
+            <article class="prices_container_article">
+                <h4 class="prices_container_article_header">Basic</h4>
+                <h5 class="prices_container_article_header_price">$0</h5>
+                <ul class="pricing__items">
+                    <li class="pricing__item">100 MB HDD</li>
+                    <li class="pricing__item">1 Subdomain</li>
+                    <li class="pricing__item">2 E-mails</li>
+                    <li class="pricing__item pricing__item--not">Two years licence</li>
+                    <li class="pricing__item pricing__item--not">Full support</li>
+                </ul>
+                <button type="button" class="prices_button">begin</button>
+
+            </article>
+            <article class="prices_container_article">
+                <h4 class="prices_container_article_header">Professional</h4>
+                <h5 class="prices_container_article_header_price">$25</h5>
+                <h6 class="prices_container_article_header_info">Limited offer</h6>
+                <ul class="pricing__items">
+                    <li class="pricing__item">100 MB HDD</li>
+                    <li class="pricing__item">1 Subdomain</li>
+                    <li class="pricing__item">2 E-mails</li>
+                    <li class="pricing__item pricing__item--not">Two years licence</li>
+                    <li class="pricing__item pricing__item--not">Full support</li>
+                </ul>
+                <span><button type="button" class="prices_button">begin</button></span>
+
+
+            </article>
+            <article class="prices_container_article">
+                <h4 class="prices_container_article_header">Professional</h4>
+                <h5 class="prices_container_article_header_price">$25</h5>
+                <h6 class="prices_container_article_header_info">Limited offer</h6>
+                <ul class="pricing__items">
+                    <li class="pricing__item">100 MB HDD</li>
+                    <li class="pricing__item">1 Subdomain</li>
+                    <li class="pricing__item">2 E-mails</li>
+                    <li class="pricing__item pricing__item--not">Two years licence</li>
+                    <li class="pricing__item pricing__item--not">Full support</li>
+                </ul>
+                <button type="button" class="prices_button">begin</button>
+            </article>
         </div>
     </section>
     <section class="contact">
+
         <div class="contact_container container">
-            <article class="contact_contariner_article"></article>
+            <article class="contact_contariner_article">
+                <h4 class="contact_contariner_article_header">Any questions?</h4>
+                <p class="contact_contariner_article_paragraph">Leave your email address or call us!</p>
+
+            </article>
+            <article class="contact_contariner_form"></article>
             <form>
-                <input placeholder="Type your name" type="name"/>
-                <input placeholder="Type your email" type="name"/>
-                <label>
+                <label class="detals">NAME</label>
+                <input type="name"/>
+                <label class="detals">EMAIL</label>
+                <input type="email"/>
+                <label class="form_checkbox" >
                     <input  type="checkbox">
                     <span></span>
                     I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
 
                 </label>
 
-                <button type="submit">SEND</button>
+                <button type="submit">Send</button>
 
             </form>
         </div>
